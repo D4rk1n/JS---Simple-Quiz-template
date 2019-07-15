@@ -4,8 +4,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
-    
+    <div class="head">
+            <div class="container text-success display-2 my-5">Quizzo</div>
+    </div>
+
+    <div class="quizz bg-success p-3 ">
+        <div class="container">
+            <h2 class="my-5 text-white">Be sure to grab your pickaxe ...</h2>
+       
+        <div class="my-5">
+                <form  class="quiz-form text-light">
+                    <p class="lead font-weight-normal">1 - if you were to make a search in what Big O would you do it</p>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q1" value="A">
+                        <label  class="form-check-label">O(n)</label>    
+                    </div>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label  class="form-check-label">O(logn)</label>    
+                    </div> 
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q1" value="C">
+                            <label  class="form-check-label">O(1)</label>    
+                    </div>   
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q1" value="D">
+                            <label  class="form-check-label">O(1/n)</label>    
+                    </div>                            
+                </form>
+        </div>
+    </div>
+    </div>
+    <script src="quiz.js"></script>
+  
+
 </body>
 </html>
