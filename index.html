@@ -10,6 +10,18 @@
         bottom: 0%;
         width: 100%;
     }
+    .flaot-left{
+        float: left;
+        position: relative;
+        width: 80%;
+    }
+    .flaot-right{
+        display: inline; 
+        float: right; 
+        position:relative; 
+        width: 15%;
+    }
+
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -88,11 +100,11 @@
                     <p class="lead font-weight-normal">3 - You are working on another project and all of the sudden your team mate finish it all alone </p>
                     <div class="form-check text-white-50">
                         <input type="radio" name="q4" value="A">
-                        <label  class="form-check-label">Make a Stand</label>    
+                        <label  class="form-check-label">انت يابوزيد الزفت</label>    
                     </div>
                     <div class="form-check text-white-50">
                         <input type="radio" name="q4" value="B">
-                        <label  class="form-check-label">انت يا ابوزيد الزفت</label>    
+                        <label  class="form-check-label"> O(1)</label>    
                     </div> 
                     <div class="form-check text-white-50">
                             <input type="radio" name="q4" value="C">
@@ -100,7 +112,7 @@
                     </div>   
                     <div class="form-check text-white-50">
                             <input type="radio" name="q4" value="D">
-                            <label  class="form-check-label">O(1)</label>    
+                            <label  class="form-check-label">Make a Stand</label>    
                     </div>                            
                 </form>
                 
@@ -110,10 +122,13 @@
 
     <script src="quiz.js"></script>
   
-    <div class="bg-dark p-1 fixed-bar">
-            <div class="progress my-2 mx-5">
+    <div class="bg-dark p-2 fixed-bar">
+            <div class="progress my-3 flaot-left">
                     <div class="progress-bar-animated progress-bar-striped bg-primary " role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+             
              </div>
+             <input type="submit" class=" btn btn-primary p-2 flaot-right" >
+            
     </div>
 </body>
 </html>
