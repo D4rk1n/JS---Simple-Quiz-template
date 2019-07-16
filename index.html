@@ -14,21 +14,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="bg-dark">
     <div class="head">
-            <div class="container text-success display-2 my-5">Quizzo</div>
+            <div class="container text-light display-1 m-5"> Farmning Quizzo</div>
     </div>
 
     
 
 
-    <div class="quizz bg-success p-3 ">
+    <div class="quizz bg-primary p-3 ">
         <div class="container">
             <h2 class="my-5 text-white">Be sure to grab your pickaxe ...</h2>
        
         <div class="my-5">
-                <form  class="quiz-form text-light">
-                    <p class="lead font-weight-normal">1 - if you were to make a search in what Big O would you do it</p>
+                <form  class="quiz-form text-light q1">
+                    <p class="lead font-weight-normal">1 - if you were to make a search in what Big O would you do it ?</p>
                     <div class="form-check text-white-50">
                         <input type="radio" name="q1" value="A">
                         <label  class="form-check-label">O(n)</label>    
@@ -46,6 +46,63 @@
                             <label  class="form-check-label">O(1/n)</label>    
                     </div>                            
                 </form>
+                <form  class="quiz-form text-light q2 my-5">
+                    <p class="lead font-weight-normal">2 - You are reading a documntion for a python library what is the right thing to do ?</p>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q2" value="A">
+                        <label  class="form-check-label">Read it carfully</label>    
+                    </div>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label  class="form-check-label">O(1)</label>    
+                    </div> 
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q2" value="C">
+                            <label  class="form-check-label">Copy the pseudocode and paste it into the compiler</label>    
+                    </div>   
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q2" value="D">
+                            <label  class="form-check-label">Fuck Python</label>    
+                    </div>                            
+                </form>
+                <form  class="quiz-form text-light q3 my-5">
+                    <p class="lead font-weight-normal">3 - You are working on a project and need some sound effects </p>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q3" value="A">
+                        <label  class="form-check-label">Search on the internet</label>    
+                    </div>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label  class="form-check-label">Record it using your own phone</label>    
+                    </div> 
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q3" value="C">
+                            <label  class="form-check-label">Ask for help</label>    
+                    </div>   
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q3" value="D">
+                            <label  class="form-check-label">O(1)</label>    
+                    </div>                            
+                </form>
+                <form  class="quiz-form text-light q4 my-5">
+                    <p class="lead font-weight-normal">3 - You are working on another project and all of the sudden your team mate finish it all alone </p>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q4" value="A">
+                        <label  class="form-check-label">Make a Stand</label>    
+                    </div>
+                    <div class="form-check text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label  class="form-check-label">انت يا ابوزيد الزفت</label>    
+                    </div> 
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q4" value="C">
+                            <label  class="form-check-label">Act like it didn't happen</label>    
+                    </div>   
+                    <div class="form-check text-white-50">
+                            <input type="radio" name="q4" value="D">
+                            <label  class="form-check-label">O(1)</label>    
+                    </div>                            
+                </form>
                 
         </div>
     </div>
@@ -53,9 +110,9 @@
 
     <script src="quiz.js"></script>
   
-    <div class="bg-white p-1 fixed-bar">
+    <div class="bg-dark p-1 fixed-bar">
             <div class="progress my-2 mx-5">
-                    <div class="progress-bar-animated progress-bar-striped bg-success " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar-animated progress-bar-striped bg-primary " role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
              </div>
     </div>
 </body>
