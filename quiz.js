@@ -12,9 +12,20 @@ form.addEventListener('submit', e=> {
         }
         
     })
-    result.querySelector("span").textContent=`  ${score}%  `;
+    console.log(score);
+    scrollTo(0,0);
     result.classList.remove("d-none");
-})
+    let i =0;
+    const intev = setInterval(()=>{
+     
+        
+        result.querySelector("span").textContent=`  ${i}%  `;
+        i++;
+        if (i > score ) {
+            console.log(i);
+            clearInterval(intev);
+        }
+    },10) })
 form.addEventListener('click',()=>{ 
     let answers = [form.q1.value,form.q2.value,form.q3.value,form.q4.value];
     let checked = 0;
@@ -24,5 +35,20 @@ form.addEventListener('click',()=>{
         }
         
     })
-    progress.setAttribute('style',"width : "+ checked+"%")
+    console.log(checked);
+    let str = progress.getAttribute('style');
+    console.log(str);
+    var i = str.replace(/\D/g, "");
+    console.log(i);
+    const intev = setInterval(()=>{
+     
+        
+        progress.setAttribute('style',"width : "+ i+"%")
+        i++;
+        if (i > checked ) {
+            clearInterval(intev);
+        }
+    },10)
+    
+    
 })
