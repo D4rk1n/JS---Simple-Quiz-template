@@ -1,11 +1,19 @@
-const Sols = ['D','C','B','A'];
+const sols = ['D','C','B','A'];
 const form = document.querySelector(".quiz-form");
+const result = document.querySelector(".result");
 const progress = document.querySelector(".pb");
 form.addEventListener('submit', e=> {
     e.preventDefault();
     let score = 0;
     let answers = [form.q1.value,form.q2.value,form.q3.value,form.q4.value];
-    console.log(answers);
+    answers.forEach((answer,ind )=> {
+        if(answer==sols[ind]) {
+            score+=25;
+        }
+        
+    })
+    result.querySelector("span").textContent=`  ${score}%  `;
+    result.classList.remove("d-none");
 })
 form.addEventListener('click',()=>{ 
     let answers = [form.q1.value,form.q2.value,form.q3.value,form.q4.value];
@@ -16,8 +24,5 @@ form.addEventListener('click',()=>{
         }
         
     })
-    console.log(checked);
-    console.log(progress);
     progress.setAttribute('style',"width : "+ checked+"%")
-    console.log(progress);
 })
