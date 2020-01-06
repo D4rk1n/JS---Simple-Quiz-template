@@ -26,6 +26,7 @@ form.addEventListener('submit', e=> {
             clearInterval(intev);
         }
     },10) })
+
 form.addEventListener('click',()=>{ 
     let answers = [form.q1.value,form.q2.value,form.q3.value,form.q4.value,form.q5.value];
     let checked = 0;
@@ -48,7 +49,7 @@ form.addEventListener('click',()=>{
         if (i > checked ) {
             clearInterval(intev);
         }
-    },10)
+    },20)
     
     
 })
